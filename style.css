@@ -1,0 +1,159 @@
+#cabecalho{
+    background-color: rgba(0, 0, 0, 0.324);
+    color: #fff;
+}
+
+.nav .nav-link.active{
+    background-color: black;
+}
+
+.nav-link,
+.nav-link:hover{
+    color: #fff;
+}
+
+.carousel-item img{
+    height: 300px;
+    object-fit: cover;
+}
+
+#contato,
+#sobre,
+aside{
+    background-color: rgba(84, 82, 82, 0.224);
+}
+
+#trabalhos .row aside{
+    padding-top: 3rem;
+}
+
+#trabalhos .navbar .btn-tra{
+    color: black;
+}
+
+#contato .container{
+    padding-top: 24px;
+}
+
+#social{
+    list-style: none;
+    display: flex;
+}
+
+#contato ul{
+    padding-left: 0;
+}
+
+#social li a{
+    color: black;
+}
+
+footer{
+    padding: 8px 16px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 767px){
+
+    *{
+        max-width: 850px;
+        width: 100%;
+    }
+
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    #container-sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #container-sobre img{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    #container-sobre .col-md-4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #container-sobre .col-md-4 p{
+        width: 60%;
+    }
+
+    #trabalhos .row{
+        display: flex;
+        width: 100%;
+    }
+
+    aside #nav-tra{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    
+    html{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    #container-sobre img{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    #trabalhos .row aside{
+        padding-top: 1rem;
+        background-color: rgba(0, 0, 0, 0.559);
+        margin-bottom: 1rem;
+    }
+
+    #contato .container .row{
+        display: block;
+    }
+
+    #contato .container .row .col-8{
+        width: 100%;
+        margin: 0;
+    }
+
+    #contato .container .row .col-4{
+        width: 100%;
+        text-align: center;
+    }
+
+    #social{
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contato .container .row .col-8 button{
+        width: 100%;
+        font-weight: bolder;
+        margin-bottom: 3rem;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    footer p{
+        font-size: small;
+    }
+}
